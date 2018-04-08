@@ -8,6 +8,7 @@
 
 package org.sqa.arraysMethods;
 
+import java.util.Arrays;
 
 /**
  * SearchArray //ADDD (description of class)
@@ -39,4 +40,19 @@ public class SearchArray {
 		}
 		return -1;
 	}
+	
+	
+	boolean binarySearchIntImbeddedSort02(int[] arr, int searchNum) {
+		Arrays.sort(arr);
+		return (Arrays.binarySearch(arr, searchNum) >= 0);
+	}
+	
+	int binarySearchImbedded03(int[] arr, int searchNum) {
+		Arrays.sort(arr);;
+		return Arrays.binarySearch(arr, searchNum);
+	}
+
+
+	
+
 }
